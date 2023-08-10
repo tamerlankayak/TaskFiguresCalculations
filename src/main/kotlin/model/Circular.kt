@@ -1,3 +1,5 @@
+package model
+
 open class Circular : Figure() {
 
 

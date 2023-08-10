@@ -1,3 +1,0 @@
-class OpenAtTop:RightCircularCylinder() {
-
-}

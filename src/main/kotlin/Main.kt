@@ -1,19 +1,19 @@
+import model.Cube
+import model.Cuboid
+
 fun main(args: Array<String>) {
 
-    val cuboidRepository = FigureRepository<Cuboid>()
-    val cuboid = Cuboid()
-    cuboid.l = 2.0f
-    cuboid.b = 3.0f
-    cuboid.h = 4.0f
+    val figureRepository = FigureRepository<IFigure>()
 
-    cuboidRepository.add(cuboid)
+    figureRepository.add(Cuboid(2.0f, 3.0f, 4.0f))
+    figureRepository.add(Cube(2.5f))
 
-    val retrievedCuboids = cuboidRepository.getAll()
-    for (c in retrievedCuboids) {
-        println("Cuboid Plane Area: ${c.planeArea()}")
-        println("Cuboid Total Area: ${c.totalArea()}")
-        println("Cuboid Volume: ${c.volume()}")
-        println("--------")
+    figureRepository.getAll().forEach { figure ->
+        with(figure) {
+            println("Plane Area: ${planeArea()}")
+            println("Total Area: ${totalArea()}")
+            println("Volume: ${volume()}")
+            println("--------")
+        }
     }
-
 }
