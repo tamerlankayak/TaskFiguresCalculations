@@ -1,6 +1,6 @@
 package repository
 
-import IFigure
+import shapes.IFigure
 
 class FigureRepository<T : IFigure> {
 

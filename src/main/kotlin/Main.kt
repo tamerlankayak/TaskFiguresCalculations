@@ -3,6 +3,7 @@ import model.Cube
 import model.Cuboid
 import model.OpenAtTop
 import repository.FigureRepository
+import shapes.IFigure
 
 fun main() {
 

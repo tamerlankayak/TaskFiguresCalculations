@@ -1,6 +1,6 @@
 package model
 
-import IFigure
+import shapes.IFigure
 
 abstract class Figure : IFigure {
 
