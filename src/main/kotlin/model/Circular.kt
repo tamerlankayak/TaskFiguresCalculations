@@ -2,16 +2,15 @@ package model
 
 open class Circular : Figure() {
 
-
-    override fun planeArea(): Float {
+    override fun planeArea(): Double {
         TODO("Not yet implemented")
     }
 
-    override fun totalArea(): Float {
+    override fun totalArea(): Double {
         TODO("Not yet implemented")
     }
 
-    override fun volume(): Float {
+    override fun volume(): Double {
         TODO("Not yet implemented")
     }
 }

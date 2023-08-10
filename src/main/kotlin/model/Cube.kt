@@ -1,6 +1,6 @@
 package model
 
-class Cube(var a: Float = 0.0f) : Cuboid() {
+class Cube(var a: Double = 0.0) : Cuboid() {
 
     override fun planeArea() = 2 * (a * a);
 

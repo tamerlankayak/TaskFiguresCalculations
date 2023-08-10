@@ -1,5 +1,5 @@
 interface IFigure {
-    fun planeArea(): Float
-    fun totalArea(): Float
-    fun volume(): Float
+    fun planeArea(): Double
+    fun totalArea(): Double
+    fun volume(): Double
 }
