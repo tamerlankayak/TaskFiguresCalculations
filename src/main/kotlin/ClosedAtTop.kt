@@ -1,0 +1,3 @@
+class ClosedAtTop:RightCircularCylinder() {
+
+}
