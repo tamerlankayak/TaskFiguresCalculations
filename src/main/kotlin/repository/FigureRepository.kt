@@ -2,10 +2,22 @@ package repository
 
 import shapes.IFigure
 
-class FigureRepository<T : IFigure> {
+class FigureRepository : Repository<IFigure>(), IFigure {
+    override fun planeArea(): Double {
+        var totalPlaneArea = 0.0
+        getAll().forEach { totalPlaneArea += it.planeArea() }
+        return totalPlaneArea
+    }
 
-    private val figures = mutableListOf<T>()
+    override fun totalArea(): Double {
+        var totalTotalArea = 0.0
+        getAll().forEach { totalTotalArea += it.totalArea() }
+        return totalTotalArea
+    }
 
-    fun addFigure(item: T) = figures.add(item)
-    fun getFiguresResult() = figures.toList()
+    override fun volume(): Double {
+        var totalVolume = 0.0
+        getAll().forEach { totalVolume += it.volume() }
+        return totalVolume
+    }
 }
